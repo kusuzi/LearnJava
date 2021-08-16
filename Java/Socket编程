@@ -1,1 +1,103 @@
-<mxfile host="app.diagrams.net" modified="2021-08-16T07:33:42.912Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" version="14.9.6" etag="8GQpEAGkDA8EgJK7Pumc" type="github"><diagram id="cTbMYu9qIKUlp5sVvs76">UzV2zq1wL0osyPDNT0nNUTV2VTV2LsrPL4GwciucU3NyVI0MMlNUjV1UjYwMgFjVyA2HrCFY1qAgsSg1rwSLBiADYTaQg2Y1AA==</diagram></mxfile>
+<mxfile host="app.diagrams.net" modified="2021-08-16T08:18:58.364Z" agent="5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/91.0.4472.101 Safari/537.36" etag="FJNZCnlm7UZc48xJOc3d" version="14.9.6" type="github">
+  <diagram id="cTbMYu9qIKUlp5sVvs76" name="Page-1">
+    <mxGraphModel dx="1483" dy="840" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="900" pageHeight="1600" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-1" value="UDP" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#fff2cc;sketch=1;strokeColor=#d6b656;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="30" y="20" width="170" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-2" value="服务器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="730" y="110" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-4" value="new &lt;font color=&quot;#ff9933&quot;&gt;DatagramSocket()&lt;/font&gt;" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="210" width="360" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-5" value="创建socket实例" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="550" y="220" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-6" value="DatagramPacket packet=DatagramPacket(byte[] buf, int length)" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="310" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-7" value="接收数据包" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="560" y="310" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-8" value="用socket接收" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="550" y="410" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-9" value="receive（packet）" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="405" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-10" value="解析数据包&lt;br&gt;在控制台显示" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="550" y="510" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-11" value="byte[] datas = packet.getData();" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="510" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-12" value="打印数据" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="550" y="610" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-13" value="new String(datas,packet.getOffset(), packet.getLength());" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="800" y="620" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-14" value="断开链接" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="555" y="720" width="220" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-15" value="dg.disconnect();" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=20;fillColor=#dae8fc;strokeColor=#6c8ebf;" vertex="1" parent="1">
+          <mxGeometry x="795" y="730" width="370" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-16" value="客户端" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="90" y="130" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-17" value="创建socket实例" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1120" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-18" value="封装数据包" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="20" y="320" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-19" value="用socket发送" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="30" y="430" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-20" value="TCP" style="rounded=1;whiteSpace=wrap;html=1;strokeWidth=2;fillWeight=4;hachureGap=8;hachureAngle=45;fillColor=#fff2cc;sketch=1;comic=1;fontSize=26;strokeColor=#d6b656;" vertex="1" parent="1">
+          <mxGeometry x="50" y="880" width="190" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-21" value="客户端" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=26;" vertex="1" parent="1">
+          <mxGeometry x="100" y="1030" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-22" value="创建socket实例" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="30" y="210" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-25" value="Socket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="215" y="1070" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-26" value="服务器" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="765" y="1020" width="90" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-27" value="创建socket实例" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="705" y="1120" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-28" value="SeverSocket" style="text;html=1;align=center;verticalAlign=middle;resizable=0;points=[];autosize=1;strokeColor=none;fontSize=25;" vertex="1" parent="1">
+          <mxGeometry x="870" y="1060" width="160" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-29" value="acccept监听客户端" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1220" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-30" value="获取输入流" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1310" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-31" value="读取数据" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1420" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-32" value="打印数据" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="690" y="1520" width="260" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-33" value="获取输出流" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1310" width="210" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="L0d8qU0Vz-TxuCzGMH6N-34" value="写出数据" style="rounded=0;whiteSpace=wrap;html=1;comic=1;fontSize=26;strokeColor=#d6b656;fillColor=#fff2cc;" vertex="1" parent="1">
+          <mxGeometry x="60" y="1400" width="210" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
